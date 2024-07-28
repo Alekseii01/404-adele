@@ -1,0 +1,116 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+
+body {
+  font-family: 'Raleway', sans-serif;
+  color: #fff; 
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  font-weight: 300; 
+}
+
+.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;  
+  height: 100%;
+  z-index: -1;
+  background-image: url('assets/2xBrettLee-faceai-enhance-2.5x.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #000;
+}
+
+.container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 80%;
+}
+
+.wrapper {
+  z-index: 1;
+  position: absolute;
+  top: 60%;
+  left: 70%;
+  transform: translate(-50%, -50%);
+  margin: 0 auto;
+}
+
+.error-code {
+  font-size: 20em;
+  margin-bottom: 20px;
+  font-weight: 100;
+  transition: all 0.4s ease-in-out;
+}
+
+.message {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+  font-weight: 500;
+  transition: all 0.4s ease-in-out;
+}
+
+.message .highlight {
+  color: rgb(200, 170, 108);
+}
+
+.pipe {
+  display: block;
+  width: 0px; 
+  height: 2px;
+  background-color: rgb(200, 170, 108);
+  animation: pipe 2s forwards;
+}
+
+.subtext {
+  font-size: 1.5em; 
+  margin: 20px 0;
+  color: rgba(256, 256, 256, .4);
+  transition: all 0.4s ease-in-out;
+}
+
+.author {
+  font-size: 1.2em;
+  color: #c9bd925b;
+  display: flex;  
+  flex-direction: row-reverse;
+  transition: all 0.4s ease-in-out;
+}
+
+@keyframes pipe {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 90px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .wrapper {
+    left: 50%;
+  }
+
+  .error-code {
+    font-size: 15em;
+  } 
+
+  .message {
+    font-size: 2em;
+  }
+
+  .pipe {
+    max-width: 70px;
+  }
+
+  .subtext {
+    font-size: 1.2em;
+  }
+
+  .author {
+    font-size: 1em;
+  }
+}
